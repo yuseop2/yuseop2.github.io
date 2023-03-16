@@ -23,10 +23,49 @@
     <meta name="og:image" content="./images/og_screen.jpg">
 
     <!-- 기본 폰트 및 초기화 로딩 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 스타일 초기화 로딩 -->
+    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    //<script src="https://cdn.jsdelivr.net/npm/normalize@0.3.1/lib/normalize.min.js"></script>
 
+    <style>
+    /* 
+    웹 폰트 : 구글 웹폰트 또는 눈누, 응용프로그램용 폰트 : 다폰트
+    font-family:"1차폰트명", 2차폰트명, 3차폰트명;
+    3차 폰트는 기본 폰트를 적용함
+    기본폰트 : 브라우저에서 기본적으로 제공하는 폰트
+    (sans-serif(고딕), serif(명조), cursive(궁서), monospace(가로세로비율1:1), fantasy(심볼기호나 디자인포트))
+    */
+    * {margin: 0;padding: 0; }
+    /*
+    margin : 테두리의 바깥여백 / 통합속성
+    margin:10px; 상/우/하/좌 모두 10px
+    margin:10px 20px; 상/하 10px 좌우 20px
+    width:400px; margin:10px auto; 크기400px 박스를 좌우 가운데로 배치하는법
+    세부속성 : margin-top/margin-bootom/margin-left (순서는 통합먼저)
+    padding : 테두리의 안쪽여백
+        
+    
+    */
+    body { width: 100%; font-family: 'Noto Sans KR', sans-serif;}
+    ul { list-style: none; }
+    a { text-decoration: none; }
+    img { border: none;}
 
+    .box { margin: 10px; margin-top: 30px; }        
+    .np { font-family: 'Nanum Pen Script', cursive;}    
+    
+
+    </style>
 </head>
 <body>
+
+
+
+
     <h1>CJ프레시웨이</h1>
     <a href="https://yuseop2.github.io">메인 - yuseop2.github.io
     
