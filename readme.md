@@ -58,6 +58,8 @@ display -none 이랑은 다르다 hidden을 하면 안보이는것뿐, 존재한
 overflow : hidden | visible | scroll (스크롤바 무조건 생김) | auto (사이즈 클때만 스크롤바 생김) 
 
 
+split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시 
+        background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
 
 
 
