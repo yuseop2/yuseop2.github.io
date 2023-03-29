@@ -72,11 +72,25 @@
      position: absolute; top: 0px;left: 0;}
     .logo img { display:block; width: 100%; height: auto; }
     
-    .gnb { position: relative; }
+    .gnb { position: relative; margin-top: 10px; }
     .gnb ul { width: 800px; height: 48px; border: 1px solid #333; margin: 0 auto; }
-    .gnb ul li { float: left; }
-   
-    .sitemap_btn { display: block; position: absolute; top: 0; right: 0; cursor: pointer; }
+    .gnb ul li { float: left; width: 16.5%; text-align: center; line-height: 50px;}
+    .gnb ul li a { font-style: 1.3em; color: #333; display: block; }
+    .gnb ul li:hover a { border-bottom: 2px solid #000; }
+    .gnb ul li:hover .sub { display: block; }
+    .sub { display: none; padding-top: 20px; width: 1000px; }
+    .sub.item2 { margin-left: -240px; }
+    .sub.item3 { margin-left: -320px; }
+    .sub.item4 { margin-left: -480px; }
+    .sub.item5 { margin-left: -640px; }
+    .sub ul li { float: left; width: 20%; }
+    .sub ul li a { display: block; color: #333; font-size: 1.1em; font-weight: 500; }
+    .sub ul li:hover a { color: #41c365; font-weight: 500 ;  }
+
+    .sitemap_btn { display: block; position: absolute; top: 0; right: 0; cursor: pointer;
+    width: 20px; height: 20px; overflow: hidden; text-indent: -999px; background-image:
+     url(./image2/gnb_icon_menu.png); background-size: 20px 40px; background-position:
+      center -20px; }
     .sitemap { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
      z-index: index 999; background-color: deeppink; display: none;}
     #sitemap_ck:checked ~ .sitemap { display: block }
@@ -101,14 +115,29 @@
             </nav>
             <div class="main">
                 <div class="main_wrap">
-                    <a href="" class="logo"><img src="./image2/headerlogo_pc_kor.png"</a>
+                    <a href="" class="logo"><img src="./image/logo.svg"</a>
                     <nav class="gnb">
                         <ul class="gnb_fr">
-                            <li><a href="">메뉴1</a></li>
-                            <li><a href="">메뉴2</a></li>
-                            <li><a href="">메뉴3</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴5</a></li>
+                            <li><a href="">차량</a>
+                                <div class=sub">
+                                    <ul class="dp2">
+                                         <li><a href="">메뉴1</a></li>
+                                         <li><a href="">메뉴2</a></li>
+                                         <li><a href="">메뉴3</a></li>
+                                         <li><a href="">메뉴4</a></li>
+                                    </ul>
+                                </div>
+                            </li>                            
+                            <li><a href="">구매</a>                                
+                            </li>
+                            <li><a href="">체험</a>
+                            </li>
+                            <li><a href="">이벤트</a>
+                            </li>
+                            <li><a href="">고객지원</a>
+                            </li>
+                            <li><a href="">Diccover Kia</a>
+                            </li>
                         </ul>
                     </nav>
                     <label for="" class="sitemap_btn">사이트맵</label>
@@ -123,6 +152,13 @@
         </div>
         </header>
         <div class="content">
+            <figure class="vs">
+                <div class="img_box">
+                    <video src="./video/The year of inspiration.mp4" muted autoplay loop></video>
+                </div>
+            </figure>
+
+
 
         </div>
         <footer class="ft">
