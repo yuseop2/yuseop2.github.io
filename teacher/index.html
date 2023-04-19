@@ -31,91 +31,10 @@
     <!-- 스타일 초기화 -->
     <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 연결 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
     <style>
-    /* 
-    웹 폰트 : 구글 웹폰트 또는 눈누, 응용 프로그램용 폰트 : 다폰트
-    font-family:"1차폰트명",2차폰트명,3차폰트명;}
-    3차 폰트는 기본 폰트를 적용함
-    기본 폰트 : 브라우저에서 기본적으로 제공하는 폰트
-    sans-serif(고딕), serif(명조), cursive(궁서), monospace(가로세로비율1:1폰트), fantasy(심볼기호나 디자인폰트)
-    */
-    * { margin: 0; padding: 0; }
-    
-    body { width: 100%; font-family: 'Noto Sans KR', sans-serif; }    
-    ul { list-style:none; }
-    a { text-decoration: none; }
-    img { border: none; }
-
-    .np { font-family: 'Nanum Pen Script', cursive;}
-
-    .container { clear:both; width:100%; }
-    .hd { clear:both; width: 100%; }
-    .tnb { clear:both; width: 100%; height:35px; background-color:#075d46;}
-    .tnb_wrap { clear:both;  width: 1400px; margin: 0 auto; height:20px; }
-    .left_tnb { float:left; }
-    .left_tnb li { float:left; line-height: 35px; }
-    .left_tnb li:first-child::after { content:"|"; color:#fff; margin-right: 14px; }
-    .left_tnb li a { margin-right: 14px; }
-    .left_tnb li a:hover { color:deeppink; }
-    .right_tnb { float:right; }
-    .right_tnb li { float:left; line-height: 35px; }
-    .right_tnb li a { margin-left: 14px; display:block; width:30px; height:30px;
-     text-indent:9999px; overflow: hidden; 
-     background-image: url("./images/icons.png");
-     margin-top: 10px; background-size:300px 700px; }
-    /* split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시 
-        background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
-    */
-    /* 각 각의 아이콘 이미지 적용시
-    .right_tnb li a { background-size:auto; background-position:center center; }
-    .right_tnb li a.ico1 { background-image: url("./images/icon1.png"); }
-    .right_tnb li a.ico2 { background-image: url("./images/icon2.png"); }
-    .right_tnb li a.ico3 { background-image: url("./images/icon3.png"); }
-    */
-    .right_tnb li a.sns1 { background-position:-67px -67px; }
-    .right_tnb li a.sns2 { background-position:-7px -67px; }
-    .right_tnb li a.sns3 { background-position:-36px -67px; }
-    .tnb ul li a { color:#fff; font-size:0.9em; }
-    
-    .main { clear:both; width: 100%; height:75px; background-color: #fff; 
-    border-bottom:1px solid #ecedee; }
-    .main_wrap { width: 1400px; margin: 0 auto; position:relative; }
-    
-    .logo { display:block; width: 120px; height:45px; overflow:hidden;
-        position:absolute; top:10px; left: 0; z-index:10;   }
-    .logo img { display:block; width: 100%; height:auto; }
-    
-    .gnb { position:relative; margin-top: 10px; }
-    .gnb > ul { width:800px;  height:48px;  margin: 0 auto; }
-    .gnb > ul > li { float:left; width: 20%; text-align: center; 
-        line-height: 50px; }
-    .gnb > ul > li > a { display:block; font-size:1.3em; color:#333;
-    font-weight: bold; }
-    .gnb > ul > li:hover > a { border-bottom:2px solid #075d46; 
-        color:#075d46; }
-
-    .sub { display:none; padding-top: 20px; width: 1000px; }
-    .sub.item2 { margin-left: -240px; }
-    .sub.item3 { margin-left: -320px; }
-    .sub.item4 { margin-left: -480px; }
-    .sub.item5 { margin-left: -640px; }
-    .gnb > ul > li:hover > .sub { display:block; }
-    .sub > ul > li { float:left; width: 20%; }
-    .sub > ul > li > a { display:block; color:#075d46; font-size:1.1em; 
-    font-weight: 500; }
-    .sub > ul > li:hover > a { color:#41c365; }
-
-    .sitemap_btn { display:block; position:absolute; top:20px;  z-index:10;
-         right:0px; cursor:pointer; width: 20px; height: 20px; overflow:hidden;
-        text-indent:-9999px; background-image: url("./images/gnb_icon_menu.png");
-        background-size:20px 40px; background-position:center -20px; }
-    .sitemap { position:fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-         z-index:999; background-color: deeppink; display:none; }
-    #sitemap_ck:checked ~ .sitemap { display:block; }    
-    #sitemap_ck { display:none; }
-
-    .vs { clear:both; position:relative; width: 100vw; height:calc(100vh - 135px);
-    overflow:hidden;  }
+    /* 내부 스타일 */
     </style>
 </head>
 <body>
@@ -136,7 +55,7 @@
             </nav>
             <div class="main">
                 <div class="main_wrap">
-                    <a href="" class="logo">
+                    <a href="index.html" class="logo">
                         <img src="./images/headerlogo_pc_kor.png" alt="CJ프레시웨이로고">
                     </a>
                     <nav class="gnb">
@@ -144,51 +63,51 @@
                             <li><a href="">솔루션</a>
                                 <div class="sub item1">
                                     <ul class="dp2">
-                                        <li><a href="">회사소개</a></li>
-                                        <li><a href="">사업영역</a></li>
-                                        <li><a href="">역량/인프라</a></li>
-                                        <li><a href="">브랜드</a></li>
+                                        <li><a href="sub1.html#page1">회사소개</a></li>
+                                        <li><a href="sub1.html#page2">사업영역</a></li>
+                                        <li><a href="sub1.html#page3">역량/인프라</a></li>
+                                        <li><a href="sub1.html#page4">브랜드</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="">지속가능경영</a>
                                 <div class="sub item2">
                                     <ul class="dp2">
-                                        <li><a href="">전략</a></li>
-                                        <li><a href="">주요활동 및 성과</a></li>
-                                        <li><a href="">윤리경영</a></li>
-                                        <li><a href="">사회공헌</a></li>
-                                        <li><a href="">보고서 및 정책</a></li>
+                                        <li><a href="sub2.html#page1">전략</a></li>
+                                        <li><a href="sub2.html#page2">주요활동 및 성과</a></li>
+                                        <li><a href="sub2.html#page3">윤리경영</a></li>
+                                        <li><a href="sub2.html#page4">사회공헌</a></li>
+                                        <li><a href="sub2.html#page5">보고서 및 정책</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="">뉴스룸</a>
                                 <div class="sub item3">
                                     <ul class="dp2">
-                                        <li><a href="">보도자료</a></li>
-                                        <li><a href="">미디어</a></li>
-                                        <li><a href="">홍보영상/브로슈어</a></li>
-                                        <li><a href="">공지사항</a></li>
+                                        <li><a href="sub3.html#page1">보도자료</a></li>
+                                        <li><a href="sub3.html#page2">미디어</a></li>
+                                        <li><a href="sub3.html#page3">홍보영상/브로슈어</a></li>
+                                        <li><a href="sub3.html#page4">공지사항</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="">투자정보</a>
                                 <div class="sub item4">
                                     <ul class="dp2">
-                                        <li><a href="">경영정보</a></li>
-                                        <li><a href="">주가정보</a></li>
-                                        <li><a href="">재무정보</a></li>
-                                        <li><a href="">IR 자료실</a></li>
+                                        <li><a href="sub4.html#page1">경영정보</a></li>
+                                        <li><a href="sub4.html#page2">주가정보</a></li>
+                                        <li><a href="sub4.html#page3">재무정보</a></li>
+                                        <li><a href="sub4.html#page4">IR 자료실</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="">채용</a>
                                 <div class="sub item5">
                                     <ul class="dp2">
-                                        <li><a href="">인사정보</a></li>
-                                        <li><a href="">CJ프레시웨어人</a></li>
-                                        <li><a href="">채용정보</a></li>
-                                        <li><a href="">인재 POOL</a></li>
+                                        <li><a href="sub5.html#page1">인사정보</a></li>
+                                        <li><a href="sub5.html#page2">CJ프레시웨어人</a></li>
+                                        <li><a href="sub5.html#page3">채용정보</a></li>
+                                        <li><a href="sub5.html#page4">인재 POOL</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -201,7 +120,51 @@
             <div class="sitemap">
                 <div class="sitemap_fr">
                     <label for="sitemap_ck" class="close_btn">닫기</label>
-                    여기는 사이트 맵
+                    <div id="realtedSites">
+                        <ul class="selectul">
+                            <li class="group">CJ그룹
+                                <ul>
+                                    <li><a href="http://www.cj.net" target="_blank" title="새 창">CJ주식회사</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">식품 &amp; 식품서비스
+                                <ul>
+                                    <li><a href="http://www.cj.co.kr/" target="_blank" title="새 창">CJ제일제당(식품)</a></li>
+                                    <li><a href="http://www.cjfoodville.co.kr/" target="_blank" title="새 창">CJ푸드빌</a></li>
+                                    <li><a href="/" class="self">CJ프레시웨이</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">생명공학
+                                <ul>
+                                    <li><a href="https://www.cj.co.kr/kr/about/business/bio" target="_blank" title="새 창">CJ제일제당 BIO사업부문</a></li>
+                                    <li><a href="https://www.cj.co.kr/kr/about/business/bio" target="_blank" title="새 창">CJFEED&amp;CARE</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">물산 &amp; 신유통
+                                <ul>
+                                    <li><a href="https://www.cjlogistics.com/ko/main" target="_blank" title="새 창">CJ대한통운</a></li>
+                                    <li><a href="http://www.cjenc.co.kr/kr/Default.asp" target="_blank" title="새 창">CJ대한통운 건설부문</a></li>
+                                    <li><a href="https://www.oliveyoung.co.kr/store/company/brandStory.do" target="_blank" title="새 창">CJ올리브영</a></li> 
+                                    <li><a href="https://www.cjolivenetworks.co.kr/" target="_blank" title="새 창">CJ올리브네트웍스</a></li>
+                                    <li><a href="https://company.cjonstyle.com/index.asp" target="_blank" title="새 창">CJ ENM 커머스부문</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">엔터테인먼트 &amp; 미디어
+                                <ul>
+                                    <li><a href="https://www.cjenm.com/ko/" target="_blank" title="새 창">CJ ENM 엔터테인먼트부문</a></li>
+                                    <li><a href="http://corp.cgv.co.kr/" target="_blank" title="새 창">CJ CGV</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">글로벌 법인
+                                <ul>
+                                    <li><a href="https://cjamerica.com/" target="_blank" title="새 창">CJ America</a></li>
+                                    <li><a href="https://www.cjchina.net/index.html" target="_blank" title="새 창">CJ China</a></li>
+                                    <li><a href="http://www.cjjapan.net/" target="_blank" title="새 창">CJ Japan</a></li>
+                                    <li><a href="https://cjvietnam.vn/" target="_blank" title="새 창">CJ Vietnam</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -211,13 +174,379 @@
                     <video src="./movie/main.mp4" muted autoplay loop></video>
                 </div>
             </figure>
+            <!-- section.page#page$*5>h2.page_title{페이지제목$}+div.page_wrap -->
+            <section class="page" id="page1">
+                <h2 class="page_title" style="display:none;">SOLUTION</h2>
+                <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">BUSINESS</h3>
+                        <h2 class="main_title">SOLUTION</h2>
+                    </div>
+                    <article class="pg1_btn_box">
+                        <!-- (input[type=radio][name=pg_ra]#pg1_ra$.pg1_ra+label[for=pg1_ra$].item$)*6 -->
+                        <input type="radio" name="pg_ra" id="pg1_ra1" class="pg1_ra" checked>
+                        <label for="pg1_ra1" class="item1">CJ프레시웨이</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra2" class="pg1_ra">
+                        <label for="pg1_ra2" class="item2">식자재 유통 솔루션</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra3" class="pg1_ra">
+                        <label for="pg1_ra3" class="item3">푸드 서비스 솔루션</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra4" class="pg1_ra">
+                        <label for="pg1_ra4" class="item4">상품 구매</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra5" class="pg1_ra">
+                        <label for="pg1_ra5" class="item5">식품 안전</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra6" class="pg1_ra">
+                        <label for="pg1_ra6" class="item6">물류 시스템</label>
+                        <!-- div.ban_fr>ul.ban_box>li.item$>img.pic+(div.ban_tit_box>h2.ban_tit1+h2.ban_tit2+p.ban_com) -->
+                        <div class="ban_fr">
+                            <ul class="ban_box">
+                                <li class="item1">
+                                    <img src="./images/main_solution_01.jpg" alt="CJ프레이시웨이" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">01</h2>
+                                        <h2 class="ban_tit2">CJ프레시웨이</h2>
+                                        <p class="ban_com">Food Business Partner<br>
+                                            Creating the Success Way
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item2">
+                                    <img src="./images/main_solution_02.jpg" alt="식자재 유통 솔루션" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">02</h2>
+                                        <h2 class="ban_tit2">식자재 유통 솔루션</h2>
+                                        <p class="ban_com">고객 맞춤 최적의 식자재 유통 솔루션</p>
+                                    </div>
+                                </li>
+                                <li class="item3">
+                                    <img src="./images/main_solution_03.jpg" alt="푸드 서비스 솔루션" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">03</h2>
+                                        <h2 class="ban_tit2">푸드 서비스 솔루션</h2>
+                                        <p class="ban_com">다양한 경로 맞춤 전문적인 푸드 서비스 솔루션</p>
+                                    </div>
+                                </li>
+                                <li class="item4">
+                                    <img src="./images/main_solution_04.jpg" alt="상품 구매" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">04</h2>
+                                        <h2 class="ban_tit2">상품 구매</h2>
+                                        <p class="ban_com">높은 품질 기준으로 차별화된 상품 경쟁력</p>
+                                    </div>
+                                </li>
+                                <li class="item5">
+                                    <img src="./images/main_solution_05.jpg" alt="식품 안전" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">05</h2>
+                                        <h2 class="ban_tit2">식품 안전</h2>
+                                        <p class="ban_com">업계 최고 수준의 식품 안전 솔루션</p>
+                                    </div>
+                                </li>
+                                <li class="item6">
+                                    <img src="./images/main_solution_06.jpg" alt="물류 시스템" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">06</h2>
+                                        <h2 class="ban_tit2">물류 시스템</h2>
+                                        <p class="ban_com">품질과 안전을 지키는 선진 물류 솔루션</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page2">
+                <h2 class="page_title" style="display:none">ESG</h2>
+                <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">ESG</h3>
+                        <h2 class="main_title">SUSTAINABILITY</h2>
+                    </div>
+                    <!-- article.grid_fr>ul.grid_box>li*3>(a.item$>h3.grid_tit+p.grid_com)*2 -->
+                    <article class="grid_fr">
+                        <ul class="grid_box">
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit">ESG 전략</h3>
+                                    <p class="grid_com">건강한 식문화와 지속가능한 유통</p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit">주요 활동 및 성과</h3>
+                                    <p class="grid_com">ESG 전략에 따른 다양한 활동</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item3">
+                                    <h3 class="grid_tit">사회공헌</h3>
+                                    <p class="grid_com">지역 사회의 가치 창출을 위한 활동</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item4">
+                                    <h3 class="grid_tit">윤리경영</h3>
+                                    <p class="grid_com">우리 사회의 가치를 높이는 경영</p>
+                                </a>
+                                <a href="" class="item5">
+                                    <h3 class="grid_tit">보고서 및 정책</h3>
+                                    <p class="grid_com">지속가능경영의 발자취</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page3">
+                <h2 class="page_title" style="display:none">IR</h2>
+                <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">IR</h3>
+                        <h2 class="main_title" style="color:#fff">INVESTOR RELATIONS</h2>
+                    </div>
+                    <!-- article.col_fr>ul.col_box>li.left+li.right -->
+                    <article class="col_fr">
+                        <ul class="col_box">
+                            <li class="left">
+                                <p class="one_line"><span class="dot">CJ프레시웨이</span> <span class="gtxt">051500</span></p>
+                                <div class="inv_p">
+                                    <p class="large_txt">29,300</p>
+                                    <p class="small_txt">
+                                        <span class="ltxt">2023/04/18 14:59:25</span><br>
+                                        <span class="btxt">─ 0 &nbsp; &nbsp; 0.00%</span>
+                                    </p>
+                                </div>
+                                <dl class="col_dl">
+                                    <dd>
+                                        <h4 class="d_tit">시가</h4>
+                                        <p class="d_com">29,300원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">고가</h4>
+                                        <p class="d_com">29,450원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">저가</h4>
+                                        <p class="d_com">29,100원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">전일가격</h4>
+                                        <p class="d_com">29,300원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">거래량</h4>
+                                        <p class="d_com">21,577주</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">거래대금</h4>
+                                        <p class="d_com">631,137,050원</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="right">
+                                <a href="" class="item1"><span>재무제표</span></a>
+                                <a href="" class="item2"><span>공시현황</span></a>
+                                <a href="" class="item3"><span>IR자료실</span></a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page4">
+                <h2 class="page_title" style="display:none">PRESS</h2>
+                <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">PRESS</h3>
+                        <h2 class="main_title">NOW IS</h2>
+                    </div>
+                    <a href="" class="more">+</a>
+                    <!-- article.board_fr>table.tb1>tbody>tr*5>td.td1+(td.td2>a>h3.td_tit+p.td_com) -->
+                    <article class="board_fr">
+                        <table class="tb1">
+                            <tbody>
+                                <tr>
+                                    <td class="td1">5</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">CJ프레시웨이, 외식기업 대상 맞춤형 메뉴 컨설팅 호응</h3>
+                                            <p class="td_com">전문 셰프가 만든 우리 매장 신메뉴 CJ프레시웨이, 외식기업 대상 맞춤형 메뉴 컨설팅 ‘호응’ 외식기업 대상 전문 셰프 노하우 담은 메뉴 개발 지원 주점 프랜차이즈 ‘탄광맥주’에</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">4</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">CJ프레시웨이, 병원급식 고객 서비스 질 높인다… 임상영양 전문가 육성</h3>
+                                            <p class="td_com">CJ프레시웨이, 병원급식 고객 서비스 질 높인다... 임상영양 전문가 육성   병원 단체급식 운영그룹 '임상영양 마스터 과정' 수료식 진행 사내 영양사 30명 대상 병원 임상영양</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">3</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">CJ프레시웨이, 봄 성수기 맞아 컨세션 서비스 개편…</h3>
+                                            <p class="td_com">CJ프레시웨이, 봄 성수기 맞아 컨세션 서비스 개편… “야구장 ‘직관 맥주’ 경험해 보세요”   광주-기아 챔피언스 필드 특별관람석 ‘비스트로 펍’ 개편, 야구장 맛집으로 인기 워</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">2</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">CJ프레시웨이, 홈페이지 리뉴얼… 고객 소통, ESG 경영 강화</h3>
+                                            <p class="td_com">CJ프레시웨이, 홈페이지 리뉴얼… "고객 소통, ESG 경영 강화"     뉴스룸, 고객 상담 서비스 및 지속가능경영 콘텐츠 신설 '지디웹 디자인 어워즈' 우수작 선정… "고객 맞</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">1</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">CJ프레시웨이, 푸드 펀딩으로 착한 연어 선봬… 와디즈에 ASC 인증 수산물 출시</h3>
+                                            <p class="td_com">CJ프레시웨이, 푸드 펀딩으로 '착한 연어' 선봬… 와디즈에 ASC 인증 수산물 출시     생산부터 유통까지 엄격한 기준 적용한 칠레 파타고니아 고품질 연어 새로운 맛 찾아 20</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page5">
+                <h2 class="page_title" style="display:none">CS CENTER</h2>
+                <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">CS CENTER</h3>
+                        <h2 class="main_title">고객상담센터</h2>
+                    </div>
+                    <!-- article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{상담하기}))*2 -->
+                    <article class="colm_fr">
+                        <h3 class="lst_tit">비즈니스 상담센터</h3>
+                        <ul class="lst1">
+                            <li class="item1">
+                                <h3 class="item_tit">식자재 구매 상담</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                            <li class="item2">
+                                <h3 class="item_tit">단체급식 위탁 상담</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                            <li class="item3">
+                                <h3 class="item_tit">협력사 상담</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                        </ul>
+                        <h3 class="lst_tit">간편 상담센터</h3>
+                        <ul class="lst2">
+                            <li class="item1">
+                                <h3 class="item_tit">챗봇 문의</h3>
+                                <a href="" class="item_more">문의하기</a>
+                            </li>
+                            <li class="item2">
+                                <h3 class="item_tit">고객의 소리</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                            <li class="item3">
+                                <h3 class="item_tit">FAQ</h3>
+                                <a href="" class="item_more">보러가기</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
         </div>
         <footer class="ft">
-
+            <article class="row row1">
+                <div class="ft_wrap">
+                    <!-- (nav.fnb>ul.fnb_box>li*5>a{메뉴$})+(select.favorite>option{사이트$}*6) -->
+                    <nav class="fnb left">
+                        <ul class="fnb_box">
+                            <li><a href="">개인정보처리방침</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">법적고지</a></li>
+                            <li><a href="">이메일 무단수집 거부</a></li>
+                            <li><a href="">온라인 제보</a></li>
+                        </ul>
+                    </nav>
+                    <select name="favo" id="favo" class="favo right" onchange="favo(this)">
+                        <option value="">FAMILY SITE</option>
+                        <option value="http://www.cj.net/">CJ주식회사</option>
+                        <option value="http://www.cj.co.kr/">CJ제일제당</option>
+                        <option value="https://www.cj.co.kr/kr/about/business/bio">CJ바이오</option>
+                        <option value="https://www.cjlogistics.com/ko/main">CJ대한통운</option>
+                        <option value="https://www.cjenm.com/ko/">CJ ENM</option>
+                        <option value="http://corp.cgv.co.kr/">CJ CGV</option>
+                    </select>
+                    <script>
+                    function favo(s){
+                        var hs = s.value;
+                        if(hs!=""){
+                            window.open(hs, "팝업");
+                        }
+                    }    
+                    </script>
+                </div>
+            </article>
+            <article class="row row2">
+                <div class="ft_wrap">
+                    <div class="slogan left">
+                        FOOD<br>
+                        BUSINESS PARTNER<br>
+                        CREATING<br>
+                        THE SUCCESS WAY
+                    </div>
+                    <!-- nav.ft_col2>dl.ft_link.item$*5>dt{솔루션$}+(dd>a)*6 -->
+                    <nav class="ft_link_fr right">
+                        <dl class="ft_link item1">
+                            <dt>솔루션</dt>
+                            <dd><a href="">회사소개</a></dd>
+                            <dd><a href="">사업영역</a></dd>
+                            <dd><a href="">역량/인프라</a></dd>
+                            <dd><a href="">브랜드</a></dd>
+                        </dl>
+                        <dl class="ft_link item2">
+                            <dt>지속가능경영</dt>
+                            <dd><a href="">OVERVIEW</a></dd>
+                            <dd><a href="">전략</a></dd>
+                            <dd><a href="">주요활동 및 성과</a></dd>
+                            <dd><a href="">윤리경영</a></dd>
+                            <dd><a href="">사회공헌</a></dd>
+                            <dd><a href="">보고서 및 정책</a></dd>
+                        </dl>
+                        <dl class="ft_link item3">
+                            <dt>뉴스룸</dt>
+                            <dd><a href="">보도자료</a></dd>
+                            <dd><a href="">미디어</a></dd>
+                            <dd><a href="">홍보영상/브로슈어</a></dd>
+                            <dd><a href="">공지사항</a></dd>
+                        </dl>
+                        <dl class="ft_link item4">
+                            <dt>투자정보</dt>
+                            <dd><a href="">경영정보</a></dd>
+                            <dd><a href="">주가정보</a></dd>
+                            <dd><a href="">재무정보</a></dd>
+                            <dd><a href="">IR 자료실</a></dd>
+                        </dl>
+                        <dl class="ft_link item5">
+                            <dt>채용</dt>
+                            <dd><a href="">인사정보</a></dd>
+                            <dd><a href="">CJ프레시웨이 人SIDE</a></dd>
+                            <dd><a href="">채용정보</a></dd>
+                            <dd><a href="">인재 POOL</a></dd>
+                        </dl>
+                    </nav>
+                </div>
+            </article>
+            <article class="row row3">
+                <div class="ft_wrap">
+                    <div class="ft_logo left"></div>
+                    <address class="copyright right">서울시 마포구 월드컵북로 54길 25 S-city   COPYRIGHT© CJ FRESHWAY. ALL RIGHTS RESERVED.</address>
+                </div>
+            </article>
         </footer>
     </div>
     <div class="fix_area">
-
+        <a href="#page5" class="cir_box counsel">고객<br>상담센터</a>
+        <a href="#" class="cir_box totop">↑<br>TOP</a>
     </div>
 </body>
 </html>
