@@ -1,0 +1,5 @@
+ *main.css 	: page1~5 포함 컨텐츠 스타일 저장 
+ *common	: 컨텐츠 제외한 [초기화] [헤더] [푸터] 스타일 저장
+ *sublayout	: 각 [page[의 레이아웃 스타일 저장
+ *sub.common 	: sub 페이지를 위해 [page1~5] 제외한 컨텐츠 스타일 저장
+ 
