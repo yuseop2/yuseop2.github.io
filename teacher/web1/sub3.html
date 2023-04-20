@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 - CJ프레시웨이</title>
+    <title>포트폴리오 - CJ프레시웨이 뉴스룸</title>
     <!-- 문서 정보 등록 -->
     <!-- 검색엔진최적화(Search Engine Optimization) : SEO -->
     <meta name="subject" content="CJ프레시웨이 벤치마킹 사이트">
@@ -31,14 +31,16 @@
     <!-- 스타일 초기화 -->
     <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 연결 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <style>
+    * { margin: 0; padding: 0; }    
+    </style>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
     <style>
     /* 내부 스타일 */
-    .content { clear:both; }
-    .vs { clear:both; width: 100vw; height: 100vh; }
-    .page { clear: both; width: 100vw; height: 100vh; position:relative; }
-    .page_tit { text-align: center;  padding-top:190px; font-size:60px; }
-    .page_wrap { width: 1280px; margin: 0 auto; }
+
+    .content { background-image: url("./images/top_bg.jpg"); }
+
     </style>
 </head>
 <body>
@@ -47,13 +49,13 @@
             <nav class="tnb">
                 <div class="tnb_wrap">
                     <ul class="left_tnb">
-                        <li><a href="">로그인</a></li>
-                        <li><a href="">회원가입</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="agreement.html">회원가입</a></li>
                     </ul>
                     <ul class="right_tnb">
-                        <li><a href="" class="sns1">A1</a></li>
-                        <li><a href="" class="sns2">A2</a></li>
-                        <li><a href="" class="sns3">A3</a></li>
+                        <li><a href="https://smartstore.naver.com/cjfreshway01" class="sns1">A1</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC1MUkmNae8N5tbcQc24BE3g?view_as=subscrib" class="sns2">A2</a></li>
+                        <li><a href="https://www.instagram.com/cjfreshway_official/" class="sns3">A3</a></li>
                     </ul>
                 </div>
             </nav>
@@ -64,7 +66,7 @@
                     </a>
                     <nav class="gnb">
                         <ul class="gnb_fr">
-                            <li><a href="">솔루션</a>
+                            <li><a href="sub1.html">솔루션</a>
                                 <div class="sub item1">
                                     <ul class="dp2">
                                         <li><a href="sub1.html#page1">회사소개</a></li>
@@ -74,7 +76,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="">지속가능경영</a>
+                            <li><a href="sub2.html">지속가능경영</a>
                                 <div class="sub item2">
                                     <ul class="dp2">
                                         <li><a href="sub2.html#page1">전략</a></li>
@@ -85,7 +87,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="">뉴스룸</a>
+                            <li><a href="sub3.html">뉴스룸</a>
                                 <div class="sub item3">
                                     <ul class="dp2">
                                         <li><a href="sub3.html#page1">보도자료</a></li>
@@ -95,7 +97,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="">투자정보</a>
+                            <li><a href="sub4.html">투자정보</a>
                                 <div class="sub item4">
                                     <ul class="dp2">
                                         <li><a href="sub4.html#page1">경영정보</a></li>
@@ -105,7 +107,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="">채용</a>
+                            <li><a href="sub5.html">채용</a>
                                 <div class="sub item5">
                                     <ul class="dp2">
                                         <li><a href="sub5.html#page1">인사정보</a></li>
@@ -117,7 +119,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <label for="sitemap_ck" class="sitemap_btn">사이트맵</label>
+                    <label for="sitemap_ck" class="sitemap_btn" title="관계 사이트">관계 사이트</label>
                 </div>
             </div>
             <input type="checkbox" id="sitemap_ck">
@@ -175,24 +177,32 @@
         <div class="content">
             <figure class="vs">
                 <div class="img_box">
-
+                    <h1 class="tit">NEWSROOM</h1>
                 </div>
             </figure>
             <section class="page" id="page1">
-                <h2 class="page_tit">회사소개</h2>
-                <div class="page_wrap"></div>
+                <h2 class="page_tit">보도자료</h2>
+                <div class="page_wrap">
+
+                </div>
             </section>
             <section class="page" id="page2">
-                <h2 class="page_tit">사업영역</h2>
-                <div class="page_wrap"></div>
+                <h2 class="page_tit">미디어</h2>
+                <div class="page_wrap">
+
+                </div>
             </section>
             <section class="page" id="page3">
-                <h2 class="page_tit">역량/인프라</h2>
-                <div class="page_wrap"></div>
+                <h2 class="page_tit">홍보영상/브로슈어</h2>
+                <div class="page_wrap">
+
+                </div>
             </section>
             <section class="page" id="page4">
-                <h2 class="page_tit">브랜드</h2>
-                <div class="page_wrap"></div>
+                <h2 class="page_tit">공지사항</h2>
+                <div class="page_wrap">
+
+                </div>
             </section>
         </div>
         <footer class="ft">
@@ -201,11 +211,11 @@
                     <!-- (nav.fnb>ul.fnb_box>li*5>a{메뉴$})+(select.favorite>option{사이트$}*6) -->
                     <nav class="fnb left">
                         <ul class="fnb_box">
-                            <li><a href="">개인정보처리방침</a></li>
-                            <li><a href="">이용약관</a></li>
-                            <li><a href="">법적고지</a></li>
-                            <li><a href="">이메일 무단수집 거부</a></li>
-                            <li><a href="">온라인 제보</a></li>
+                            <li><a href="pravacy.html">개인정보처리방침</a></li>
+                            <li><a href="usepromotion.html">이용약관</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">이메일 무단수집 거부</a></li>
+                            <li><a href="#">온라인 제보</a></li>
                         </ul>
                     </nav>
                     <select name="favo" id="favo" class="favo right" onchange="favo(this)">
