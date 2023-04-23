@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIA - CJ프레시웨이 ver</title>
+    <!-- 문서 정보 등록 -->
+    <!-- 검색엔진 최적화(Search Engine Optimization) : SEO -->
+    <meta name="subject" content="CJ프레시웨이 벤치마킹 사이트">
+    <meta name="keywords" content="CJ프레시웨이, 식품, 식단, 주문제작">
+    <meta name="description" content="CJ프레시웨이는 CJ 식품의 전반적인 정보를 공유합니다">
+    <meta name="author" content="yuseop2">
+
+    <!-- 파비콘(favorite icon) 설정 /제작사이트 / 어플아이콘 --> 
+    <link rel="shortcut icon" href="./images/favicon.ico">
+
+    <!-- 오픈그래프 설정 -->
+    <!-- https://yuseop2.githube.is/web1 입력해서 확인 가능 -->
+    <meta name="og:site_name" content="사이트이름">
+    <meta name="og:title" content="포트폴리오 - CJ프레시웨이">
+    <meta name="og:description" content="CJ프레시웨이는 CJ 식품의 전반적인 정보를 공유합니다">
+    <meta name="og:url" content="https://yuseop2.githube.is/web1">
+    <meta name="og:image" content="./image/og_screen.jpg">
+
+    <!-- 기본 폰트 및 초기화 로딩 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 스타일 초기화 로딩 -->
+    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 연결 -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    
+    <!--★★★여기가 바뀐 부분 : 스타일을 쪼개서 CSS로 만들고
+        링크걸어서 불러 오는데 그게 이부분임★★★-->
+    <link rel="stylesheet" href="./css/common.css">   <!-- [초기화][헤더][푸터]CSS -->
+    <link rel="stylesheet" href="./css/sub_common.css">     <!-- [메인]CSS -->
+    <link rel="stylesheet" href="./css/sublayout.css"><!-- [서브레이아웃]CSS -->
+    <style>
+    /* 내부 스타일 */
+    
+    .content { background-image: url("./images/top_solution.jpg"); }
+    .grid4 li { text-align: center; box-sizing: border-box; border:1px solid #9b4848; }
+    
+    .grid4 { clear:both; width: 1280px; }
+    .grid4 .grid_box { clear:both; width: 1280px; padding-top: 40px; }
+    .grid4 .grid_box li { width: 410px; margin-right: 25px; float:left; }
+    .grid4 .grid_box li:last-child { margin-right: 0; }
+    .grid4 .grid_box li a { display:block; color:#6f6f6f; background-position:10px -20px; 
+    background-repeat: no-repeat; margin-top: 80px; min-height: 250px;
+    padding-top:6em;  padding-left: 2em; font-size:20px; box-sizing:border-box; }
+    .grid4 .grid_tit { font-size:24px; font-weight:200; color:#000000; padding-top:50px;  }
+    .grid4 .grid_com { padding-top: 14px; }
+
+        
+    .grid_box li a.item1 { background-image: url("/web1/image/car_niroev.png"); background-size: contain;}
+    .grid_box li a.item2 { background-image: url("/web1/image/car_ev6gt.png"); background-size: contain;}
+    .grid_box li a.item3 { background-image: url("/web1/image/car_bongo3evpower.png"); background-size: contain;}
+    .grid_box li a.item4 { background-image: url("/web1/image/car_niroplus.png"); background-size: contain;}
+    .grid_box li a.item5 { background-image: url("/web1/image/car_bongo3-ev.png"); background-size: contain;}
+    .grid_box li a.item6 { background-image: url("/web1/image/car_ev6.png"); background-size: contain;}
+    .grid_box li a.item7 { background-image: url("/web1/image/car_bongo3evfrozen.png"); background-size: contain;}
+
+/* grid4 > grid_box > li > item1 > grid_tit + grid_com*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hd">
+            <nav class="tnb">
+                <div class="tnb_wrap">
+                    <ul class="left_tnb">
+                        <li><a href="search.html">통합 검색</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                    </ul>
+                    <ul class="right_tnb">
+                        <li><a href="" class="sns1">A1</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC6Im3VweLhYbiT2qYTIP6nw" class="sns2">youtube</a></li>
+                        <li><a href="https://www.instagram.com/kia.kor/" class="sns3">instagram</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="main_wrap">
+                    <a href="index.html" class="logo">
+                        <img src="./image/logo.svg" alt="기아로고">
+                    </a>
+                    <nav class="gnb">
+                        <ul class="gnb_fr">
+                            <li><a href="sub1.html">차량</a>
+                                <div class="sub item1">
+                                    <ul class="dp2">
+                                        <li><a href="sub1.html#page1">EV & PBV</a></li>
+                                        <li><a href="sub1.html#page2">승용</a></li>
+                                        <li><a href="sub1.html#page3">RV</a></li>
+                                        <li><a href="sub1.html#page4">택시 & 버스 & 상용</a></li>
+                                    </ul>
+                                </div>
+                            </li>                            
+                            <li><a href="sub2.html">구매</a>
+                                <div class="sub item2">
+                                    <ul class="dp2">
+                                        <li><a href="sub2.html#page1">견적 내기</a></li>
+                                        <li><a href="sub2.html#page2">할부 계산기</a></li>
+                                        <li><a href="sub2.html#page3">이 달의 구매 혜택</a></li>
+                                        <li><a href="sub2.html#page4">구매 상담 신청</a></li>
+                                        <li><a href="sub2.html#page6">렌터카</a></li>
+                                    </ul>
+                                </div>                                    
+                            </li>
+                            <li><a href="sub3.html">체험</a>
+                                <div class="sub item3">
+                                    <ul class="dp2">
+                                        <li><a href="sub3.html#page1">시승 신청</a></li>
+                                        <li><a href="sub3.html#page2">판매 네트워크</a></li>
+                                        <li><a href="sub3.html#page3">Kia 체험거점</a></li>
+                                        </ul>
+                                </div>
+                            </li>
+                            <li><a href="sub4.html">이벤트</a>
+                                <div class="sub item4">
+                                    <ul class="dp2">
+                                        <li><a href="sub4.html#page1">진행 중인 이벤트</a></li>
+                                        <li><a href="sub4.html#page2">종료된 이벤트</a></li>
+                                        <li><a href="sub4.html#page3">당첨자 발표</a></li>
+                                        </ul>
+                                </div>    
+                            </li>
+                            <li><a href="sub5.html">고객지원</a>
+                                <div class="sub item5">
+                                    <ul class="dp2">
+                                        <li><a href="sub5.html#page1">기아멤버스</a></li>
+                                        <li><a href="sub5.html#page2">고객센터</a></li>
+                                        <li><a href="sub5.html#page3">구매 가이드</a></li>
+                                        <li><a href="sub5.html#page4">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="sub6.html">Discovery Kia</a>
+                                <div class="sub item6">
+                                    <ul class="dp2">
+                                        <li><a href="sub6.html#page1">New Kia</a></li>
+                                        <li><a href="sub6.html#page2">뉴스</a></li>
+                                        <li><a href="sub6.html#page3">지속가능경영</a></li>
+                                        <li><a href="sub6.html#page4">사업장 안내</a></li>
+                                        <li><a href="sub6.html#page5">AutoLand 견학</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <label for="sitemap_ck" class="sitemap_btn" title="관계 사이트">관계 사이트</label>
+                </div>
+            </div>
+            <input type="checkbox" id="sitemap_ck">
+            <div class="sitemap">
+              <div class="sitemap_fr">
+                 <label for="sitemap_ck" class="close_btn">닫기</label>
+                 <div id="realtedSites">
+                    <ul class="selectul">
+                        <li class="group">완성차
+                            <ul>
+                                <li><a href="https://www.hyundai.com/kr/ko/e" target="_blank" title="새 창">현대자동차</a></li>
+                                <li><a href="https://www.kia.com/kr" target="_blank" title="새 창">기아</a></li>
+                            </ul>
+                        </li>
+                        <li class="group">철강
+                            <ul>
+                                <li><a href="https://www.hyundai-steel.com/kr/index.hds" target="_blank" title="새 창">현대제철</a></li>
+                                <li><a href="https://www.bngsteel.com/kr/" target="_blank" title="새 창">현대비앤지스틸</a></li>
+                                <li><a href="http://www.hyundai-ss.com/" class="self">현대종합특수강</a></li>
+                            </ul>
+                        </li>
+                        <li class="group">건설
+                            <ul>
+                                <li><a href="https://www.hdec.kr/intro.aspx" target="_blank" title="새 창">현대건설</a></li>
+                                <li><a href="https://www.hec.co.kr/ko" target="_blank" title="새 창">현대엔지니어링</a></li>
+                                <li><a href="http://www.hesi.co.kr/kr/Default.aspx" target="_blank" title="새 창">현대스틸산업</a></li>
+                                <li><a href="https://www.hdcity.co.kr/" target="_blank" title="새 창">현대도시개발</a></li>
+                            </ul>
+                        </li>
+                        <li class="group">부품
+                            <ul>
+                                <li><a href="https://www.mobis.co.kr/kr/index.do" target="_blank" title="새 창">현대모비스</a></li>
+                                <li><a href="https://www.hyundai-transys.com/ko/main.do" target="_blank" title="새 창">현대트랜시스</a></li>
+                                <li><a href="https://www.hyundai-wia.com/main/main.asp" target="_blank" title="새 창">현대위아</a></li> 
+                                <li><a href="http://www.hyundai-mseat.com/ko/main.asp" target="_blank" title="새 창">현대엠시트</a></li>
+                                <li><a href="https://www.hyundai-kefico.com/ko/main/index.do" target="_blank" title="새 창">현대케피코</a></li>
+                                <li><a href="http://www.ihl.co.kr/" target="_blank" title="새 창">현대아이에이치엘</a></li>
+                                <li><a href="http://www.partecs.co.kr/Main.aspx" target="_blank" title="새 창">현대파텍스</a></li>
+                            </ul>
+                        </li>
+                        <li class="group">금융
+                            <ul>
+                                <li><a href="https://www.hyundaicapital.com/main/main/CPMNMN0101.hc" target="_blank" title="새 창">현대캐피탈</a></li>
+                                <li><a href="https://www.hyundaicard.com/index.jsp" target="_blank" title="새 창">현대카드</a></li>
+                                <li><a href="https://www.hyundaicommercial.com/home.hc" target="_blank" title="새 창">현대커머셜</a></li>
+                                <li><a href="https://www.hmsec.com/" target="_blank" title="새 창">현대차증권</li>
+                            </ul>
+                        </li>
+                        <li class="group">기타
+                            <ul>
+                                <li><a href="http://www.glovis.net/Kor/main/index.do" target="_blank" title="새 창">현대글로비스</a></li>
+                                <li><a href="http://www.glovis.net/Kor/main/index.do" target="_blank" title="새 창">현대로템</a></li>
+                                <li><a href="http://www.innocean.com/ww-ko/" target="_blank" title="새 창">이노션</a></li>
+                                <li><a href="https://www.haevichi.com/" target="_blank" title="새 창">해비치 호텔&amp;리조트</a></li>
+                                <li><a href="https://www.hyundai-autoever.com/kor/main/index.do" target="_blank" title="새 창">현대오토에버</a></li>
+                                <li><a href="http://www.hyundai-ngv.com/main/index.do" target="_blank" title="새 창">현대엔지비</a></li>
+                                <li><a href="https://www.hdfnd.co.kr/" target="_blank" title="새 창">현대서산농장</a></li>
+                                <li><a href="http://www.gitauto.com/kor/main/main.aspx" target="_blank" title="새 창">지아이티</a></li>
+                                <li><a href="https://www.gmarineservice.com/html/00_main/" target="_blank" title="새 창">지마린서비스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </header>
+        <div class="content">
+            <figure class="vs">
+                <div class="img_box">
+                    <h1 class="tit">차량</h1>
+                </div>
+            </figure>
+            <!-- section.page#page$*5>h2.page_title{페이지제목$}+div.page_wrap -->
+            <section class="page" id="page1">
+                <h2 class="page_tit" >EV & PBV</h2>
+                <div class="page_wrap">                    
+                    <article class="grid4">
+                        <ul class="grid_box">
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit">니로 EV</h3>
+                                    <p class="grid_com">5,171 만원 ~</p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit">EV6 GT</h3>
+                                    <p class="grid_com">7,688 만원 ~</p>
+                                </a>
+                                <a href="" class="item3">
+                                    <h3 class="grid_tit">봉고3 EV 파워게이트</h3>
+                                    <p class="grid_com">4,792 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item4">
+                                    <h3 class="grid_tit">니로 플러스</h3>
+                                    <p class="grid_com">4,600 만원 ~</p>
+                                </a>
+                                <a href="" class="item5">
+                                    <h3 class="grid_tit">봉고3 EV</h3>
+                                    <p class="grid_com">4,365 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item6">
+                                    <h3 class="grid_tit">EV6</h3>
+                                    <p class="grid_com">5,187 만원 ~</p>
+                                </a>
+                                <a href="" class="item7">
+                                    <h3 class="grid_tit">봉고3 EV 탑차/윙바디</h3>
+                                    <p class="grid_com">6,174 만원 ~</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page2">
+                <h2 class="page_tit" >승용</h2>
+                <div class="page_wrap">                    
+                    <article class="grid4">
+                        <ul class="grid_box">
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit">니로 EV</h3>
+                                    <p class="grid_com">5,171 만원 ~</p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit">EV6 GT</h3>
+                                    <p class="grid_com">7,688 만원 ~</p>
+                                </a>
+                                <a href="" class="item3">
+                                    <h3 class="grid_tit">봉고3 EV 파워게이트</h3>
+                                    <p class="grid_com">4,792 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item4">
+                                    <h3 class="grid_tit">니로 플러스</h3>
+                                    <p class="grid_com">4,600 만원 ~</p>
+                                </a>
+                                <a href="" class="item5">
+                                    <h3 class="grid_tit">봉고3 EV</h3>
+                                    <p class="grid_com">4,365 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item6">
+                                    <h3 class="grid_tit">EV6</h3>
+                                    <p class="grid_com">5,187 만원 ~</p>
+                                </a>
+                                <a href="" class="item7">
+                                    <h3 class="grid_tit">봉고3 EV 탑차/윙바디</h3>
+                                    <p class="grid_com">6,174 만원 ~</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page3">
+                <h2 class="page_tit" >RV</h2>
+                <div class="page_wrap">                    
+                    <article class="grid4">
+                        <ul class="grid_box">
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit">니로 EV</h3>
+                                    <p class="grid_com">5,171 만원 ~</p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit">EV6 GT</h3>
+                                    <p class="grid_com">7,688 만원 ~</p>
+                                </a>
+                                <a href="" class="item3">
+                                    <h3 class="grid_tit">봉고3 EV 파워게이트</h3>
+                                    <p class="grid_com">4,792 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item4">
+                                    <h3 class="grid_tit">니로 플러스</h3>
+                                    <p class="grid_com">4,600 만원 ~</p>
+                                </a>
+                                <a href="" class="item5">
+                                    <h3 class="grid_tit">봉고3 EV</h3>
+                                    <p class="grid_com">4,365 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item6">
+                                    <h3 class="grid_tit">EV6</h3>
+                                    <p class="grid_com">5,187 만원 ~</p>
+                                </a>
+                                <a href="" class="item7">
+                                    <h3 class="grid_tit">봉고3 EV 탑차/윙바디</h3>
+                                    <p class="grid_com">6,174 만원 ~</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page4">
+                <h2 class="page_tit" >택시 & 버스 & 상용</h2>
+                <div class="page_wrap">                    
+                    <article class="grid4">
+                        <ul class="grid_box">
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit">니로 EV</h3>
+                                    <p class="grid_com">5,171 만원 ~</p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit">EV6 GT</h3>
+                                    <p class="grid_com">7,688 만원 ~</p>
+                                </a>
+                                <a href="" class="item3">
+                                    <h3 class="grid_tit">봉고3 EV 파워게이트</h3>
+                                    <p class="grid_com">4,792 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item4">
+                                    <h3 class="grid_tit">니로 플러스</h3>
+                                    <p class="grid_com">4,600 만원 ~</p>
+                                </a>
+                                <a href="" class="item5">
+                                    <h3 class="grid_tit">봉고3 EV</h3>
+                                    <p class="grid_com">4,365 만원 ~</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item6">
+                                    <h3 class="grid_tit">EV6</h3>
+                                    <p class="grid_com">5,187 만원 ~</p>
+                                </a>
+                                <a href="" class="item7">
+                                    <h3 class="grid_tit">봉고3 EV 탑차/윙바디</h3>
+                                    <p class="grid_com">6,174 만원 ~</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <footer class="ft">
+            <article class="row row1">
+                <div class="ft_wrap">
+                    <!-- (nav.fnb>ul.fnb_box>li*5>a{메뉴$})+(select.favorite>option{사이트$}*6) -->
+                    <nav class="fnb left">
+                        <ul class="fnb_box">
+                            <li><a href="">개인정보처리방침</a></li>
+                            <li><a href="">프라이버시 센터</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">윤리경영 사이버 감사실</a></li>
+                            <li><a href="">전자공고</a></li>
+                            <li><a href="">사이트맵</a></li>
+                        </ul>
+                    </nav>
+                    <select name="favo" id="favo" class="favo right" onchange="favo(this)">
+                        <option value="">FAMILY SITE</option>
+                        <option value="https://www.hyundai.co.kr/">현대자동차그룹</option>
+                        <option value="https://members.kia.com/">기아멤버스</option>
+                        <option value="https://drivingexperience.hyundai.co.kr/kr/program/driving-experience/kia">기아 드라이빙 아카데이</option>
+                        <option value="https://tigers.co.kr/">기아 타이거즈</option>
+                        <option value="http://special.kia.com/kr/main.do">기아 군용</option>
+                        <option value="https://connect.kia.com/kr/00_main/main.html">Kia Connect</option>
+                    </select>
+                    <script>
+                    function favo(s){
+                        var hs = s.value;
+                        if(hs!=""){
+                            window.open(hs, "팝업");
+                        }
+                    }    
+                    </script>
+                </div>
+            </article>
+            <article class="row row2">
+                <div class="ft_wrap">
+                    <div class="slogan left">                        
+                        <dd><img src="image/1prize.jpg" alt="">
+                            22년 국가고객만족도(NCSI) RV(7년 연속),중형(3년 연속), 경형(8년 연속) 1위</dd>                        
+                        <dd><img src="image/2prize.jpg" alt="">
+                            22년 한국 산업의 서비스 품질지수 우수 콜센터 선정 (19년 연속)</dd>                        
+                        <dd><img src="image/3prize.jpg" alt="">
+                            22년 한국산업의 서비스 품질지수 자동차 A/S부문 1위 (9년 연속)</dd>                        
+                        <dd><img src="image/4prize.jpg" alt="">
+                            22년 한국서비스품질지수(KS-SQI) 자동차 판매서비스 부문 1위</dd>                                   
+                        <dd><a href="http://www.wa.or.kr/board/list.asp?search=total&amp;
+                            SearchString=%B1%E2%BE%C6%C0%DA%B5%BF%C2%F7&amp;BoardID=0006&amp;utm_source=kmc_kr&amp;
+                            utm_medium=website&amp;utm_campaign=kia_footer_accessibility" 
+                            title="한국웹접근성인증평가원 새창이동" target="_blank">
+                            <img src="image/5prize.jpg" alt="">웹 접근성 품질인증
+                            </a></dd>                                             
+                    </div>
+                    <!-- nav.ft_col2>dl.ft_link.item$*5>dt{솔루션$}+(dd>a)*6 -->
+                    <nav class="ft_link_fr right">
+                        <dl class="ft_link item1">
+                            <dd><a href="">솔루션</a></dd>
+                            <dd><a href="">판매 네트워크</a></dd>
+                            <dd><a href="">견적 내기</a></dd>
+                            <dd><a href="">구매 상담 신청</a></dd>
+                            <dd><a href="">시승신청</a></dd>
+                            <dd><a href="">기아렌터카</a></dd>
+                        </dl>
+                        <dl class="ft_link item2">
+                            <dd><a href="">New Kia</a></dd>
+                            <dd><a href="">공지사항</a></dd>
+                            <dd><a href="">뉴스</a></dd>
+                            <dd><a href="">IR</a></dd>
+                            <dd><a href="">채용</a></dd>                            
+                        </dl>
+                    </nav>
+                </div>
+            </article>
+            <article class="row row3">
+                <div class="ft_wrap">
+                    <div class="ft_logo left"></div>
+                    <address class="copyright right">© Kia Corp. All rights reserved</address>
+                </div>
+            </article>
+        </footer>
+    </div>
+    <div class="fix_area">
+        <a href="#page5" class="cir_box counsel">고객<br>상담센터</a>
+        <a href="#" class="cir_box totop">↑<br>TOP</a>
+    </div>
+</body>
+</html>

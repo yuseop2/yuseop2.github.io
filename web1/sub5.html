@@ -34,10 +34,21 @@
     <!--★★★여기가 바뀐 부분 : 스타일을 쪼개서 CSS로 만들고
         링크걸어서 불러 오는데 그게 이부분임★★★-->
     <link rel="stylesheet" href="./css/common.css">   <!-- [초기화][헤더][푸터]CSS -->
-    <link rel="stylesheet" href="./css/main.css">     <!-- [메인]CSS -->
-
+    <link rel="stylesheet" href="./css/sub_common.css">     <!-- [메인]CSS -->
+    <link rel="stylesheet" href="./css/sublayout.css"><!-- [서브레이아웃]CSS -->
     <style>
     /* 내부 스타일 */
+    
+    .content { background-image: url("./images/top_solution.jpg"); }
+    #page1 .grid4 li { text-align: center; box-sizing:border-box; border:1px solid #eee; height: 300px; }
+    #page1 .grid4 .grid_tit { font-size:28px; font-weight:200; color:#075d46; padding-top:50px;  }
+    #page1 .grid4 .grid_tit:after { content:""; display:block; clear:both; width:80px;
+    height:5px; background-color:#075d46; margin:30px auto; }
+    #page1 .grid4 .grid_com { padding-top: 14px; }
+
+    #page2 { background-image: url("./images/esg01_landscape.jpg"); background-position:center center;
+    background-size:100% auto; background-attachment: fixed; }
+    #page2 .page_comment { text-shadow:1px 1px 3px #333; color:#fff; }
     </style>
 </head>
 <body>
@@ -136,55 +147,55 @@
                     <ul class="selectul">
                         <li class="group">완성차
                             <ul>
-                                <li><a href="http://www.cj.net" target="_blank" title="새 창">현대자동차</a></li>
-                                <li><a href="http://www.cj.net" target="_blank" title="새 창">기아</a></li>
+                                <li><a href="https://www.hyundai.com/kr/ko/e" target="_blank" title="새 창">현대자동차</a></li>
+                                <li><a href="https://www.kia.com/kr" target="_blank" title="새 창">기아</a></li>
                             </ul>
                         </li>
                         <li class="group">철강
                             <ul>
-                                <li><a href="http://www.cj.co.kr/" target="_blank" title="새 창">현대제철</a></li>
-                                <li><a href="http://www.cjfoodville.co.kr/" target="_blank" title="새 창">현대비앤지스틸</a></li>
-                                <li><a href="/" class="self">현대종합특수강</a></li>
+                                <li><a href="https://www.hyundai-steel.com/kr/index.hds" target="_blank" title="새 창">현대제철</a></li>
+                                <li><a href="https://www.bngsteel.com/kr/" target="_blank" title="새 창">현대비앤지스틸</a></li>
+                                <li><a href="http://www.hyundai-ss.com/" class="self">현대종합특수강</a></li>
                             </ul>
                         </li>
                         <li class="group">건설
                             <ul>
-                                <li><a href="https://www.cj.co.kr/kr/about/business/bio" target="_blank" title="새 창">현대건설</a></li>
-                                <li><a href="https://www.cj.co.kr/kr/about/business/bio" target="_blank" title="새 창">현대엔지니어링</a></li>
-                                <li><a href="https://www.cj.co.kr/kr/about/business/bio" target="_blank" title="새 창">현대스틸산업</a></li>
-                                <li><a href="https://www.cj.co.kr/kr/about/business/bio" target="_blank" title="새 창">현대도시개발</a></li>
+                                <li><a href="https://www.hdec.kr/intro.aspx" target="_blank" title="새 창">현대건설</a></li>
+                                <li><a href="https://www.hec.co.kr/ko" target="_blank" title="새 창">현대엔지니어링</a></li>
+                                <li><a href="http://www.hesi.co.kr/kr/Default.aspx" target="_blank" title="새 창">현대스틸산업</a></li>
+                                <li><a href="https://www.hdcity.co.kr/" target="_blank" title="새 창">현대도시개발</a></li>
                             </ul>
                         </li>
                         <li class="group">부품
                             <ul>
-                                <li><a href="https://www.cjlogistics.com/ko/main" target="_blank" title="새 창">현대모비스</a></li>
-                                <li><a href="http://www.cjenc.co.kr/kr/Default.asp" target="_blank" title="새 창">현대트랜시스</a></li>
-                                <li><a href="https://www.oliveyoung.co.kr/store/company/brandStory.do" target="_blank" title="새 창">현대위아</a></li> 
-                                <li><a href="https://www.cjolivenetworks.co.kr/" target="_blank" title="새 창">현대엠시트</a></li>
-                                <li><a href="https://company.cjonstyle.com/index.asp" target="_blank" title="새 창">현대케피코</a></li>
-                                <li><a href="https://company.cjonstyle.com/index.asp" target="_blank" title="새 창">현대아이에이치엘</a></li>
-                                <li><a href="https://company.cjonstyle.com/index.asp" target="_blank" title="새 창">현대파텍스</a></li>
+                                <li><a href="https://www.mobis.co.kr/kr/index.do" target="_blank" title="새 창">현대모비스</a></li>
+                                <li><a href="https://www.hyundai-transys.com/ko/main.do" target="_blank" title="새 창">현대트랜시스</a></li>
+                                <li><a href="https://www.hyundai-wia.com/main/main.asp" target="_blank" title="새 창">현대위아</a></li> 
+                                <li><a href="http://www.hyundai-mseat.com/ko/main.asp" target="_blank" title="새 창">현대엠시트</a></li>
+                                <li><a href="https://www.hyundai-kefico.com/ko/main/index.do" target="_blank" title="새 창">현대케피코</a></li>
+                                <li><a href="http://www.ihl.co.kr/" target="_blank" title="새 창">현대아이에이치엘</a></li>
+                                <li><a href="http://www.partecs.co.kr/Main.aspx" target="_blank" title="새 창">현대파텍스</a></li>
                             </ul>
                         </li>
                         <li class="group">금융
                             <ul>
-                                <li><a href="https://www.cjenm.com/ko/" target="_blank" title="새 창">현대캐피탈</a></li>
-                                <li><a href="http://corp.cgv.co.kr/" target="_blank" title="새 창">현대카드</a></li>
-                                <li><a href="https://www.cjenm.com/ko/" target="_blank" title="새 창">현대커머셜</a></li>
-                                <li><a href="http://corp.cgv.co.kr/" target="_blank" title="새 창">현대차증권</li>
+                                <li><a href="https://www.hyundaicapital.com/main/main/CPMNMN0101.hc" target="_blank" title="새 창">현대캐피탈</a></li>
+                                <li><a href="https://www.hyundaicard.com/index.jsp" target="_blank" title="새 창">현대카드</a></li>
+                                <li><a href="https://www.hyundaicommercial.com/home.hc" target="_blank" title="새 창">현대커머셜</a></li>
+                                <li><a href="https://www.hmsec.com/" target="_blank" title="새 창">현대차증권</li>
                             </ul>
                         </li>
                         <li class="group">기타
                             <ul>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">현대글로비스</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">현대로템</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">이노션</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">해비치 호텔&amp;리조트</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">현대오토에버</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">현대엔지비</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">현대서산농장</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">지아이티</a></li>
-                                <li><a href="https://cjamerica.com/" target="_blank" title="새 창">지마린서비스</a></li>
+                                <li><a href="http://www.glovis.net/Kor/main/index.do" target="_blank" title="새 창">현대글로비스</a></li>
+                                <li><a href="http://www.glovis.net/Kor/main/index.do" target="_blank" title="새 창">현대로템</a></li>
+                                <li><a href="http://www.innocean.com/ww-ko/" target="_blank" title="새 창">이노션</a></li>
+                                <li><a href="https://www.haevichi.com/" target="_blank" title="새 창">해비치 호텔&amp;리조트</a></li>
+                                <li><a href="https://www.hyundai-autoever.com/kor/main/index.do" target="_blank" title="새 창">현대오토에버</a></li>
+                                <li><a href="http://www.hyundai-ngv.com/main/index.do" target="_blank" title="새 창">현대엔지비</a></li>
+                                <li><a href="https://www.hdfnd.co.kr/" target="_blank" title="새 창">현대서산농장</a></li>
+                                <li><a href="http://www.gitauto.com/kor/main/main.aspx" target="_blank" title="새 창">지아이티</a></li>
+                                <li><a href="https://www.gmarineservice.com/html/00_main/" target="_blank" title="새 창">지마린서비스</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -195,12 +206,12 @@
         <div class="content">
             <figure class="vs">
                 <div class="img_box">
-                    <video src="./video/The year of inspiration.mp4" muted autoplay loop></video>
+                    <h1 class="tit">고객 지원</h1>
                 </div>
             </figure>
             <!-- section.page#page$*5>h2.page_title{페이지제목$}+div.page_wrap -->
             <section class="page" id="page1">
-                <h2 class="page_title" style="display:none;">최근 출시</h2>
+                <h2 class="page_tit" >기아 멤버스</h2>
                 <div class="page_wrap">
                     <div class="tit_box">
                         <h3 class="sub_title">Best Kia</h3>
@@ -278,7 +289,7 @@
                 </div>
             </section>
             <section class="page" id="page2">
-                <h2 class="page_title" style="display:none">New Kia</h2>
+                <h2 class="page_tit" >고객센터</h2>
                 <div class="page_wrap">                    
                     <div class="tit_box">
                         <h3 class="sub_title">Discovery Kia</h3>
@@ -318,7 +329,7 @@
                 </div>
             </section>
             <section class="page" id="page3">
-                <h2 class="page_title" style="display:none">체험과 이벤트</h2>
+                <h2 class="page_tit" >구매 가이드</h2>
                 <div class="page_wrap">
                     <div class="tit_box">
                         <h3 class="sub_title">체험</h3>
@@ -362,7 +373,7 @@
                 </div>
             </section>
             <section class="page" id="page4">
-                <h2 class="page_title" style="display:none">PRESS</h2>
+                <h2 class="page_tit" >공지사항</h2>
                 <div class="page_wrap">
                     <div class="tit_box">
                         <h3 class="sub_title">Discovery Kia</h3>
@@ -420,48 +431,6 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </article>
-                </div>
-            </section>
-            <section class="page" id="page5">
-                <h2 class="page_title" style="display:none">구매 가이드</h2>
-                <div class="page_wrap">
-                    <div class="tit_box">
-                        <h3 class="sub_title">고객 지원</h3>
-                        <h2 class="main_title">구매 가이드</h2>
-                    </div>
-                    <!-- article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{상담하기}))*2 -->
-                    <article class="colm_fr">
-                        <h3 class="lst_tit1">구매 가이드</h3>
-                        <ul class="lst1">
-                            <li class="item1">
-                                <h3 class="item_tit">구매 프로그램</h3>
-                                <a href="" class="item_more">자세히 보기</a>
-                            </li>
-                            <li class="item2">
-                                <h3 class="item_tit">세금</h3>
-                                <a href="" class="item_more">자세히 보기</a>
-                            </li>
-                            <li class="item3">
-                                <h3 class="item_tit">등록</h3>
-                                <a href="" class="item_more">자세히 보기</a>
-                            </li>
-                        </ul>
-                        <h3 class="lst_tit2">고객센터</h3>
-                        <ul class="lst2">
-                            <li class="item1">
-                                <h3 class="item_tit">유의 사항</h3>
-                                <a href="" class="item_more">자세히 보기</a>
-                            </li>
-                            <li class="item2">
-                                <h3 class="item_tit">출하 및 탁송정보</h3>
-                                <a href="" class="item_more">자세히 보기</a>
-                            </li>
-                            <li class="item3">
-                                <h3 class="item_tit">1:1 문의</h3>
-                                <a href="" class="item_more">문의 하러 가기</a>
-                            </li>
-                        </ul>
                     </article>
                 </div>
             </section>
